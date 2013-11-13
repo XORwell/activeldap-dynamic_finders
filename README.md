@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/repos/52840661c7f3a31afb022567/badges/ef5745b61ee31ef9a4dc/gpa.png)](https://codeclimate.com/repos/52840661c7f3a31afb022567/feed)
+
+
 # ActiveLdap::DynamicFinders
 
 TODO: Write a gem description
