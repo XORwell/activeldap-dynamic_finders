@@ -21,8 +21,8 @@ describe ActiveLdap::DynamicFinders do
   #   ).domain("dc=github,dc=com") 
   # }
 
-  it { expect(domain.valid_login?('calavera', 'secret')).not_to be_nil }
-  it { expect(domain.valid_login?('ldaptest', 'secret')).not_to be_nil }
+  # it { expect(domain.valid_login?('calavera', 'secret')).not_to be_nil }
+  # it { expect(domain.valid_login?('ldaptest', 'secret')).not_to be_nil }
 
   
   describe '.respond_to?' do
