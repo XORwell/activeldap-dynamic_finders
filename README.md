@@ -1,4 +1,3 @@
-
 # ActiveLdap::DynamicFinders
 
 Dynamic finders for [ActiveLdap](https://github.com/activeldap/activeldap)
@@ -41,6 +40,7 @@ User.find_by_cn_and_mail('jim', 'jim@example.com')
 ```
 
 ## Code Status
+* [![Gem Version](https://badge.fury.io/rb/active_ldap-dynamic_finders.png)](http://badge.fury.io/rb/active_ldap-dynamic_finders)
 * [![Build Status](https://travis-ci.org/XORwell/activeldap-dynamic_finders.png)](https://travis-ci.org/XORwell/activeldap-dynamic_finders)
 * [![Code Climate](https://codeclimate.com/repos/52840661c7f3a31afb022567/badges/ef5745b61ee31ef9a4dc/gpa.png)](https://codeclimate.com/repos/52840661c7f3a31afb022567/feed)
 * [![Dependency Status](https://gemnasium.com/XORwell/activeldap-dynamic_finders.png)](https://gemnasium.com/XORwell/activeldap-dynamic_finders)
