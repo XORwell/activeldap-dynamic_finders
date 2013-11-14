@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/XORwell/activeldap-dynamic_finders.png)](https://travis-ci.org/XORwell/activeldap-dynamic_finders) [![Code Climate](https://codeclimate.com/repos/52840661c7f3a31afb022567/badges/ef5745b61ee31ef9a4dc/gpa.png)](https://codeclimate.com/repos/52840661c7f3a31afb022567/feed) [![Dependency Status](https://gemnasium.com/XORwell/activeldap-dynamic_finders.png)](https://gemnasium.com/XORwell/activeldap-dynamic_finders)
+
 
 
 # ActiveLdap::DynamicFinders
@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-First at all, add it to your ActiveLdap model:
+Add it to your ActiveLdap model:
 
 ```ruby
 class User < ActiveLdap::Base
@@ -33,7 +33,7 @@ class User < ActiveLdap::Base
 end
 ```
 
-Then you can use `.find_by_*` and `.find_by_*_and_*` methods. _Replace * with any attribute available in your ActiveDirectory_
+Then you have `.find_by_*` and `.find_by_*_and_*` methods. _Replace * with any attribute available in your ActiveDirectory_
 
 ```ruby
 User.find_by_cn('jim')
@@ -42,11 +42,25 @@ User.find_by_cn('jim')
 User.find_by_cn_and_mail('jim', 'jim@example.com')
 ```
 
+## Code Status
+* [![Build Status](https://travis-ci.org/XORwell/activeldap-dynamic_finders.png)](https://travis-ci.org/XORwell/activeldap-dynamic_finders)
+* [![Code Climate](https://codeclimate.com/repos/52840661c7f3a31afb022567/badges/ef5745b61ee31ef9a4dc/gpa.png)](https://codeclimate.com/repos/52840661c7f3a31afb022567/feed)
+* [![Dependency Status](https://gemnasium.com/XORwell/activeldap-dynamic_finders.png)](https://gemnasium.com/XORwell/activeldap-dynamic_finders)
 
-## Contributing
+## License
+ActiveLdap::DynamicFinders is released under the [MIT License](http://opensource.org/licenses/MIT).
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+## Thanks
+
+This list may not be correct. If you notice mistakes of this
+list, please point out.
+
+* Kouhei Sutou: maintaining ActiveLdap
