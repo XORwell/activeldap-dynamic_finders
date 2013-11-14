@@ -3,7 +3,8 @@
 
 # ActiveLdap::DynamicFinders
 
-TODO: Write a gem description
+Dynamic finders for [ActiveLdap](https://github.com/activeldap/activeldap)
+
 
 ## Installation
 
@@ -21,7 +22,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+First at all, add it to your ActiveLdap model:
+
+```ruby
+class User < ActiveLdap::Base
+
+  include ActiveLdap::DynamicFinders # <- Add this line
+  
+  ...
+end
+```
+
+Then you can use `.find_by_*` and `.find_by_*_and_*` methods. _Replace * with any attribute available in your ActiveDirectory_
+
+```ruby
+User.find_by_cn('jim')
+```
+```ruby
+User.find_by_cn_and_mail('jim', 'jim@example.com')
+```
+
 
 ## Contributing
 
