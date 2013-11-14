@@ -1,5 +1,5 @@
+require 'active_ldap'
 require 'active_ldap/dynamic_finders'
-
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir.glob(File.expand_path("spec/support/**/*.rb")).each{ |f| require f }
@@ -17,3 +17,4 @@ RSpec.configure do |config|
   # Include macros
   config.include LdapMacros
 end
+

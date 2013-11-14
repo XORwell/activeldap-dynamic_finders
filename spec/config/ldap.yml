@@ -1,0 +1,6 @@
+test:
+  host: 127.0.0.1
+  port: 3897
+  base: DC=activeldap,DC=com
+  bind_dn: cn=admin,dc=activeldap,dc=com
+  password: secret

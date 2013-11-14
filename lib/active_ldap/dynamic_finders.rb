@@ -3,7 +3,7 @@ require 'active_support/concern'
 
 module ActiveLdap
   module DynamicFinders
-    
+
     extend ActiveSupport::Concern
 
     included do
@@ -31,12 +31,11 @@ module ActiveLdap
           end
      
           # Run dynamic finder
-          # @param [String] attrs (find_by attribute names)
-          # @param [Array] args
-          #
-          # @return [type] [description]      
           def run_find_by_method(attrs, *args)
             attrs = attrs.split('_and_')
+
+            raise(ArgumentError, "wrong number of arguments (#{args.size} for #{attrs.size})") if attrs.size != args.size
+
             attrs_with_args = [attrs, args].transpose
             conditions = Hash[attrs_with_args]
             self.find(:all, filter: [:and, conditions])
