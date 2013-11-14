@@ -2,12 +2,9 @@ require 'spec_helper'
 
 describe ActiveLdap::DynamicFinders do
 
-  let!(:model){
-    class User
-      include ActiveLdap::DynamicFinders
-    end
-  }
-
+  let!(:al_class){ require 'active_ldap'; class ActiveLdapUser < ActiveLdap::Base; include ActiveLdap::DynamicFinders end }
+  let!(:not_al_class){ class User; include ActiveLdap::DynamicFinders end }
+ 
   # include_context "ldap"
 
   # let!(:domain){ 
@@ -26,17 +23,23 @@ describe ActiveLdap::DynamicFinders do
 
   
   describe '.respond_to?' do
-    it { expect(model).to respond_to('respond_to?')}
     context "dynamic finders" do
-      [:find_by_mail, :find_by_dn, :find_by_ThisShouldAlsoDo, :find_by_by_by, :find_by_me_and_you].each{ |finder|
-        it "does respond to any find_by prefixed methods: #{finder}" do
-          expect(model.respond_to?(finder)).to be_true
+      [:find_by_mail, :find_by_me_and_you].each{ |finder|
+        context 'ActiveLdap::Base inherited class' do
+          it "does respond to any find_by prefixed methods: #{finder}" do
+            expect(al_class.respond_to?(finder)).to be_true
+          end
+        end
+        context 'Not ActiveLdap::Base inherited class' do
+          it "does NOT respond to any find_by prefixed methods: #{finder}" do
+            expect(not_al_class.respond_to?(finder)).to be_false
+          end
         end
       }
     end
   end
-  describe 'run_find_by_method' do
 
+  describe 'run_find_by_method' do
   end
   describe 'method_missing' do
   end
