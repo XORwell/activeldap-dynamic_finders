@@ -48,7 +48,7 @@ User.find_by_cn_and_mail('jim', 'jim@example.com')
 ## License
 ActiveLdap::DynamicFinders is released under the [MIT License](http://opensource.org/licenses/MIT).
 
-Copyright © 2013 Christian Nennemann _(christian.nennemann@gmail.com)_
+Copyright © 2013 Christian Nennemann _(christian.nennemann[at]gmail[dot]com)_
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
