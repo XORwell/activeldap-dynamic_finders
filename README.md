@@ -42,6 +42,7 @@ User.find_by_cn_and_mail('jim', 'jim@example.com')
 ## Code Status
 * [![Gem Version](https://badge.fury.io/rb/active_ldap-dynamic_finders.png)](http://badge.fury.io/rb/active_ldap-dynamic_finders)
 * [![Build Status](https://travis-ci.org/XORwell/activeldap-dynamic_finders.png)](https://travis-ci.org/XORwell/activeldap-dynamic_finders)
+* [![Code Climate](https://codeclimate.com/github/XORwell/activeldap-dynamic_finders.png)](https://codeclimate.com/github/XORwell/activeldap-dynamic_finders)
 * [![Dependency Status](https://gemnasium.com/XORwell/activeldap-dynamic_finders.png)](https://gemnasium.com/XORwell/activeldap-dynamic_finders)
 
 ## License
