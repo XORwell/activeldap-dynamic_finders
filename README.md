@@ -57,11 +57,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
-## Thanks
-
-This list may not be correct. If you notice mistakes of this list,
-please point out.
-
-* Kouhei Sutou for maintaining [ActiveLdap](https://github.com/activeldap/activeldap)
-* ...
